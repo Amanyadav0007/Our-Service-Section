@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    background: #111;
+    color: white;
+}
+
+.container{
+    height: 100%;
+    padding-top: 30px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container .services{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container .services .card{
+    width: 330px;
+    text-align: center;
+    background: #222;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .services .card:hover{
+    background: blueviolet;
+}
+
+.container .services .card .content{
+    transition: 0.3s;
+}
+
+.container .services .card:hover .content{
+    transform: scale(1.07);
+}
+
+.container .services .card .content .icon{
+    padding: 5px 0;
+    color: white;
+}
+
+.container .services .card .content .icon i{
+    font-size: 40px;
+}
+
+.container .services .card:hover .content .title{
+    color: white;
+}
+
+.container .services .card .content .title{
+    padding: 5px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: blueviolet;
+    transition: 0.3s;
+}
